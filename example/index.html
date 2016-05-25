@@ -1,0 +1,50 @@
+<html ng-app="exampleApp">
+
+<head>
+  <meta charset="utf-8">
+  <title>Angular Table Utils</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+
+<body>
+  <div>
+    <div ng-controller="ExampleController as example">
+      <gp-pagination options="example.paginationOptions"></gp-pagination>
+    </div>
+  </div>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.2/angular.js"></script>
+  <script src="../src/angular-table-utils.js"></script>
+  <!--script src="https://rawgit.com/gpincheiraa/angular-table-utils/master/src/angular-table-utils.js"></script-->
+
+  <script>
+    (function(){
+  
+      angular
+        .module('exampleApp', ['gp.tableUtils']);
+
+      angular
+       .module('exampleApp')
+       .controller('ExampleController', Controller);
+      
+      function Controller(){
+        var vm = this;
+        
+        vm.paginationOptions = {
+          perPage: 15,
+          totalItems: 38,
+          callback: changePage
+        };
+        
+        function changePage(){
+          console.log(arguments);
+        }
+        
+      }
+      
+    })();
+
+  </script>
+</body>
+</html>
