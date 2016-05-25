@@ -1,7 +1,7 @@
 {
-  "name": "angular-table-utils",
-  "main": "src/angular-table-utils.js",
-  "homepage": "https://github.com/gpincheiraa/angular-table-utils",
+  "name": "angular-table-components",
+  "main": "src/angular-table-components.js",
+  "homepage": "https://github.com/gpincheiraa/angular-table-components",
   "authors": [
     "Gonzalo Pincheira A. <g.pincheira.a@gmail.com>"
   ],

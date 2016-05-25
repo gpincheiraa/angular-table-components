@@ -1,2 +1,2 @@
-## Angular Table Utils
+## Angular Table Components
 

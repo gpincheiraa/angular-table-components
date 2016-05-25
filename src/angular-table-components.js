@@ -1,7 +1,7 @@
 (function(window, angular, undefined){
   
   angular
-    .module('gp.tableUtils',[])
+    .module('gp.tableComponents',[])
     .run(runFn);
   
   runFn.$inject = ['$templateCache'];
@@ -24,7 +24,7 @@
 
   
   angular
-    .module('gp.tableUtils')
+    .module('gp.tableComponents')
     .provider('pagination', provider);
   
   function provider(){
@@ -44,7 +44,7 @@
   }
   
   angular
-    .module('gp.tableUtils')
+    .module('gp.tableComponents')
     .directive('gpPagination', directive);
   
   directive.$inject = ['pagination'];
