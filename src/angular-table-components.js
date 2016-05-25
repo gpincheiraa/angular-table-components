@@ -37,10 +37,10 @@
           pointer-events: none; \
         }\
       </style>';
-    this.$get = function($interpolate) {
+    this.$get = ['$interpolate',function($interpolate) {
       var interCss = $interpolate(cssString);
       document.head.insertAdjacentHTML("beforeend", interCss());
-    };
+    }];
   }
   
   angular
